@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ==============================
+   RADIO BUTTON BASE
+   ============================== */
+.pb-radio {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  font-family: 'Press Start 2P', monospace;
+  cursor: pointer;
+  user-select: none;
+  font-size: 12px;
+}
+
+/* Hide default radio */
+.pb-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom radio circle */
+.pb-radio span {
+  position: relative;
+  padding-left: 30px;
+  display: inline-block;
+}
+
+.pb-radio span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 4px 4px 0 black;
+  background: none;
+  transition: 0.1s;
+}
+
+/* Checked state */
+.pb-radio input:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: currentColor;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0 black;
+}
+
+/* ==============================
+   color variants
+   ============================== */
+.pb-radio-fire { color: #ff4d4d; }
+.pb-radio-water { color: #4da6ff; }
+.pb-radio-electric { color: #f7d51d; }
+.pb-radio-grass { color: #4dff88; }
+.pb-radio-ghost { color: #a066ff; }

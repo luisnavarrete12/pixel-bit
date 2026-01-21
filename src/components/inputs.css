@@ -1,0 +1,84 @@
+/* ================================
+   PIXEL INPUTS – BASE
+   ================================ */
+
+.input {
+  font-family: 'Press Start 2P', monospace;
+  padding: 12px 14px;
+  border: 3px solid black;
+  background: white;
+  color: black;
+  box-shadow: 4px 4px 0 black;
+  outline: none;
+  transition: 0.1s;
+  font-size: 12px;
+  width: 100%;
+}
+
+/* Hover */
+.input:hover {
+  filter: brightness(1.1);
+}
+
+/* Focus */
+.input:focus {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 black;
+}
+
+/* Placeholder */
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Disabled */
+.input:disabled {
+  background: #bfbfbf;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: 2px 2px 0 black;
+  opacity: 0.7;
+}
+
+/* ================================
+   COLOR VARIANTS 
+   ================================ */
+
+.input-electric {
+  background: #f7d51d;
+}
+
+.input-fire {
+  background: #ff4d4d;
+}
+
+.input-water {
+  background: #4da6ff;
+}
+
+.input-grass {
+  background: #4dff88;
+}
+
+.input-ghost {
+  background: #a066ff;
+}
+
+/* ================================
+   SIZES
+   ================================ */
+
+.input-sm {
+  padding: 8px 10px;
+  font-size: 10px;
+}
+
+.input-md {
+  padding: 12px 14px;
+  font-size: 12px;
+}
+
+.input-lg {
+  padding: 16px 18px;
+  font-size: 14px;
+}

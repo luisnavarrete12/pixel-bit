@@ -1,0 +1,89 @@
+/* ================================
+   PIXEL TEXTAREAS – BASE
+   ================================ */
+
+.textarea {
+  font-family: 'Press Start 2P', monospace;
+  padding: 12px 14px;
+  border: 3px solid black;
+  background: white;
+  color: black;
+  box-shadow: 4px 4px 0 black;
+  outline: none;
+  transition: 0.1s;
+  font-size: 12px;
+  width: 100%;
+  resize: none;
+  min-height: 100px;
+}
+
+/* Hover */
+.textarea:hover {
+  filter: brightness(1.1);
+}
+
+/* Focus */
+.textarea:focus {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 black;
+}
+
+/* Placeholder */
+.textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Disabled */
+.textarea:disabled {
+  background: #bfbfbf;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: 2px 2px 0 black;
+  opacity: 0.7;
+}
+
+/* ================================
+    COLOR VARIANTS  
+   ================================ */
+
+.textarea-electric {
+  background: #f7d51d;
+}
+
+.textarea-fire {
+  background: #ff4d4d;
+}
+
+.textarea-water {
+  background: #4da6ff;
+}
+
+.textarea-grass {
+  background: #4dff88;
+}
+
+.textarea-ghost {
+  background: #a066ff;
+}
+
+/* ================================
+   SIZES
+   ================================ */
+
+.textarea-sm {
+  padding: 8px 10px;
+  font-size: 10px;
+  min-height: 70px;
+}
+
+.textarea-md {
+  padding: 12px 14px;
+  font-size: 12px;
+  min-height: 100px;
+}
+
+.textarea-lg {
+  padding: 16px 18px;
+  font-size: 14px;
+  min-height: 140px;
+}

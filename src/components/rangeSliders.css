@@ -1,0 +1,76 @@
+/* ================================
+   RANGE SLIDERS - PIXELBIT LIBRARY
+   ================================ */
+
+.range-slider {
+  -webkit-appearance: none;
+  width: 280px;
+  height: 20px;
+  border: 4px solid black;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 black;
+  background: #ddd;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 12px 0;
+}
+
+.range-slider:active {
+  box-shadow: 2px 2px 0 black;
+  transform: translate(2px, 2px);
+}
+
+/* Slider Thumb */
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border: 3px solid black;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 black;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.range-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border: 3px solid black;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 black;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* ================================
+   Color variants
+   ================================ */
+
+.range-fire::-webkit-slider-thumb { background: #ff4d4d; }
+.range-fire::-moz-range-thumb { background: #ff4d4d; }
+
+.range-water::-webkit-slider-thumb { background: #4da6ff; }
+.range-water::-moz-range-thumb { background: #4da6ff; }
+
+.range-electric::-webkit-slider-thumb { background: #f7d51d; }
+.range-electric::-moz-range-thumb { background: #f7d51d; }
+
+.range-grass::-webkit-slider-thumb { background: #4dff88; }
+.range-grass::-moz-range-thumb { background: #4dff88; }
+
+.range-ghost::-webkit-slider-thumb { background: #a066ff; }
+.range-ghost::-moz-range-thumb { background: #a066ff; }
+
+/* Fill Track */
+.range-slider::-webkit-slider-runnable-track {
+  height: 100%;
+  background: #ccc;
+}
+
+.range-slider::-moz-range-track {
+  height: 100%;
+  background: #ccc;
+}

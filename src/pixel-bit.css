@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+
+/* Import all components */
+@import './components/Button.css';
+@import './components/inputs.css';
+@import './components/progressBar.css';
+@import './components/select.css';
+@import './components/textareas.css';
+@import './components/checkbox.css';
+@import './components/radioButtons.css';
+@import './components/rangeSliders.css';
+@import './components/toggleButton.css';
+@import './components/fileUploads.css';
+@import './components/validation.css';
+@import './components/cards.css';
+

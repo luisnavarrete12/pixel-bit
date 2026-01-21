@@ -1,0 +1,788 @@
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+/* ================================
+   FUENTE TIPO PIXEL (OPCIONAL)
+   ================================ */
+
+/* Esto es una fuente estilo GameBoy.
+   Si no la quieres, puedes borrar esto. */
+
+
+/* ================================
+   CLASE BASE DEL BOTÓN
+   ================================ */
+
+.btn {
+  /* Fuente pixel retro */
+  font-family: 'Press Start 2P', monospace;
+
+  /* Espaciado interno del botón */
+  padding: 12px 20px;
+
+  /* Borde negro grueso estilo pixel */
+  border: 3px solid black;
+
+  /* Fondo transparente por defecto (lo cambia cada variante) */
+  background: none;
+
+  /* Cambia el cursor a mano */
+  cursor: pointer;
+
+  /* Texto en mayúsculas */
+  text-transform: uppercase;
+
+  /* Espaciado entre letras */
+  letter-spacing: 1px;
+
+  /* Sombra dura estilo pixel (no blur) */
+  box-shadow: 4px 4px 0 black;
+
+  /* Transiciones rápidas */
+  transition: 0.1s;
+
+  /* Quita borde azul feo al hacer click */
+  outline: none;
+}
+
+
+/* ================================
+   EFECTO HOVER (cuando pasas el mouse)
+   ================================ */
+
+.btn:hover {
+  /* Hace el color un poco más brillante */
+  filter: brightness(1.1);
+}
+
+
+/* ================================
+   EFECTO ACTIVE (cuando haces click)
+   ================================ */
+
+.btn:active {
+  /* Mueve el botón hacia abajo y derecha */
+  transform: translate(2px, 2px);
+
+  /* Reduce la sombra para que parezca hundido */
+  box-shadow: 2px 2px 0 black;
+}
+
+
+/* ================================
+   BOTÓN DESACTIVADO
+   ================================ */
+
+.btn:disabled {
+  /* Color gris apagado */
+  background: #bfbfbf;
+
+  /* Texto más oscuro */
+  color: #666;
+
+  /* Cursor de prohibido */
+  cursor: not-allowed;
+
+  /* Sombra más chica */
+  box-shadow: 2px 2px 0 black;
+
+  /* Baja opacidad */
+  opacity: 0.7;
+}
+
+
+/* ================================
+   VARIANTES DE COLOR (POKÉMON)
+   ================================ */
+
+/* Tipo eléctrico (amarillo) */
+.btn-pokemon-electric {
+  background: #f7d51d;
+  color: black;
+}
+
+/* Tipo fuego (rojo) */
+.btn-pokemon-fire {
+  background: #ff4d4d;
+  color: black;
+}
+
+/* Tipo agua (azul) */
+.btn-pokemon-water {
+  background: #4da6ff;
+  color: black;
+}
+
+/* Tipo planta (verde) */
+.btn-pokemon-grass {
+  background: #4dff88;
+  color: black;
+}
+
+/* Tipo fantasma (morado) */
+.btn-pokemon-ghost {
+  background: #a066ff;
+  color: black;
+}
+
+
+/* ================================
+   TAMAÑOS
+   ================================ */
+
+/* Pequeño */
+.btn-sm {
+  padding: 8px 14px;
+  font-size: 10px;
+}
+
+/* Mediano (default) */
+.btn-md {
+  padding: 12px 20px;
+  font-size: 12px;
+}
+
+/* Grande */
+.btn-lg {
+  padding: 16px 26px;
+  font-size: 14px;
+}
+
+/* ================================
+   PIXEL INPUTS – BASE
+   ================================ */
+
+.input {
+  font-family: 'Press Start 2P', monospace;
+  padding: 12px 14px;
+  border: 3px solid black;
+  background: white;
+  color: black;
+  box-shadow: 4px 4px 0 black;
+  outline: none;
+  transition: 0.1s;
+  font-size: 12px;
+  width: 100%;
+}
+
+/* Hover */
+.input:hover {
+  filter: brightness(1.1);
+}
+
+/* Focus */
+.input:focus {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 black;
+}
+
+/* Placeholder */
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Disabled */
+.input:disabled {
+  background: #bfbfbf;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: 2px 2px 0 black;
+  opacity: 0.7;
+}
+
+/* ================================
+   COLOR VARIANTS (MISMO QUE BOTONES)
+   ================================ */
+
+.input-electric {
+  background: #f7d51d;
+}
+
+.input-fire {
+  background: #ff4d4d;
+}
+
+.input-water {
+  background: #4da6ff;
+}
+
+.input-grass {
+  background: #4dff88;
+}
+
+.input-ghost {
+  background: #a066ff;
+}
+
+/* ================================
+   SIZES
+   ================================ */
+
+.input-sm {
+  padding: 8px 10px;
+  font-size: 10px;
+}
+
+.input-md {
+  padding: 12px 14px;
+  font-size: 12px;
+}
+
+.input-lg {
+  padding: 16px 18px;
+  font-size: 14px;
+}
+
+/* ================================
+   BASE PROGRESS BAR
+   ================================ */
+
+.pb-bar {
+  width: 260px;
+  height: 22px;
+  background: #e0e0e0;
+  border: 3px solid black;
+  box-shadow: 4px 4px 0 black;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fill */
+.pb-bar-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+/* ================================
+   VARIANTES DE COLOR (IGUAL A BOTONES)
+   ================================ */
+
+/* Fire */
+.pb-fire .pb-bar-fill {
+  background: #ff4d4d;
+}
+
+/* Water */
+.pb-water .pb-bar-fill {
+  background: #4da6ff;
+}
+
+/* Electric */
+.pb-electric .pb-bar-fill {
+  background: #f7d51d;
+}
+
+/* Grass */
+.pb-grass .pb-bar-fill {
+  background: #4dff88;
+}
+
+/* Ghost */
+.pb-ghost .pb-bar-fill {
+  background: #a066ff;
+}
+
+/* ================================
+   TIPOS DE BARRAS
+   ================================ */
+
+/* HP Bar */
+.hp-bar .pb-bar-fill {
+  background: linear-gradient(
+    90deg,
+    #ff4d4d,
+    #ff7a7a
+  );
+}
+
+/* MP Bar */
+.mp-bar .pb-bar-fill {
+  background: linear-gradient(
+    90deg,
+    #4da6ff,
+    #7fc1ff
+  );
+}
+
+/* XP Bar */
+.xp-bar .pb-bar-fill {
+  background: linear-gradient(
+    90deg,
+    #4dff88,
+    #9bffb8
+  );
+}
+
+/* Loading Bar */
+.loading-bar .pb-bar-fill {
+  background: repeating-linear-gradient(
+    45deg,
+    #f7d51d,
+    #f7d51d 8px,
+    #ffeb7a 8px,
+    #ffeb7a 16px
+  );
+  animation: loading-move 1s linear infinite;
+}
+
+/* ================================
+   LOADING ANIMATION
+   ================================ */
+
+@keyframes loading-move {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 32px 0;
+  }
+}
+
+/* ==============================
+   SELECT BASE
+   ============================== */
+.pb-select {
+  font-family: 'Press Start 2P', monospace;
+  padding: 12px 16px;
+  border: 3px solid black;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 4px 4px 0 black;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: 0.1s;
+}
+
+/* HOVER & ACTIVE */
+.pb-select:hover {
+  filter: brightness(1.1);
+}
+.pb-select:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 black;
+}
+
+/* ==============================
+   VARIANTES DE COLOR (como botones)
+   ============================== */
+.pb-select-fire { background: #ff4d4d; color: black; }
+.pb-select-water { background: #4da6ff; color: black; }
+.pb-select-electric { background: #f7d51d; color: black; }
+.pb-select-grass { background: #4dff88; color: black; }
+.pb-select-ghost { background: #a066ff; color: black; }
+
+/* ==============================
+   TAMANOS
+   ============================== */
+.pb-select-sm { padding: 8px 12px; font-size: 10px; }
+.pb-select-md { padding: 12px 16px; font-size: 12px; }
+.pb-select-lg { padding: 16px 20px; font-size: 14px; }
+
+/* ================================
+   PIXEL TEXTAREAS – BASE
+   ================================ */
+
+.textarea {
+  font-family: 'Press Start 2P', monospace;
+  padding: 12px 14px;
+  border: 3px solid black;
+  background: white;
+  color: black;
+  box-shadow: 4px 4px 0 black;
+  outline: none;
+  transition: 0.1s;
+  font-size: 12px;
+  width: 100%;
+  resize: none;
+  min-height: 100px;
+}
+
+/* Hover */
+.textarea:hover {
+  filter: brightness(1.1);
+}
+
+/* Focus */
+.textarea:focus {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 black;
+}
+
+/* Placeholder */
+.textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Disabled */
+.textarea:disabled {
+  background: #bfbfbf;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: 2px 2px 0 black;
+  opacity: 0.7;
+}
+
+/* ================================
+   COLOR VARIANTS (MISMO SISTEMA)
+   ================================ */
+
+.textarea-electric {
+  background: #f7d51d;
+}
+
+.textarea-fire {
+  background: #ff4d4d;
+}
+
+.textarea-water {
+  background: #4da6ff;
+}
+
+.textarea-grass {
+  background: #4dff88;
+}
+
+.textarea-ghost {
+  background: #a066ff;
+}
+
+/* ================================
+   SIZES
+   ================================ */
+
+.textarea-sm {
+  padding: 8px 10px;
+  font-size: 10px;
+  min-height: 70px;
+}
+
+.textarea-md {
+  padding: 12px 14px;
+  font-size: 12px;
+  min-height: 100px;
+}
+
+.textarea-lg {
+  padding: 16px 18px;
+  font-size: 14px;
+  min-height: 140px;
+}
+
+
+/* ==============================
+   RADIO BUTTON BASE
+   ============================== */
+.pb-radio {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  font-family: 'Press Start 2P', monospace;
+  cursor: pointer;
+  user-select: none;
+  font-size: 12px;
+}
+
+/* Hide default radio */
+.pb-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom radio circle */
+.pb-radio span {
+  position: relative;
+  padding-left: 30px;
+  display: inline-block;
+}
+
+.pb-radio span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 3px solid black;
+  border-radius: 50%;
+  box-shadow: 4px 4px 0 black;
+  background: none;
+  transition: 0.1s;
+}
+
+/* Checked state */
+.pb-radio input:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: currentColor;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0 black;
+}
+
+/* ==============================
+   VARIANTES DE COLOR (como botones)
+   ============================== */
+.pb-radio-fire { color: #ff4d4d; }
+.pb-radio-water { color: #4da6ff; }
+.pb-radio-electric { color: #f7d51d; }
+.pb-radio-grass { color: #4dff88; }
+.pb-radio-ghost { color: #a066ff; }
+
+/* ================================
+   RANGE SLIDERS - PIXELBIT LIBRARY
+   ================================ */
+
+.range-slider {
+  -webkit-appearance: none;
+  width: 280px;
+  height: 20px;
+  border: 4px solid black;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 black;
+  background: #ddd;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 12px 0;
+}
+
+.range-slider:active {
+  box-shadow: 2px 2px 0 black;
+  transform: translate(2px, 2px);
+}
+
+/* Slider Thumb */
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border: 3px solid black;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 black;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.range-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border: 3px solid black;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 black;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* ================================
+   VARIANTES DE COLOR
+   ================================ */
+
+.range-fire::-webkit-slider-thumb { background: #ff4d4d; }
+.range-fire::-moz-range-thumb { background: #ff4d4d; }
+
+.range-water::-webkit-slider-thumb { background: #4da6ff; }
+.range-water::-moz-range-thumb { background: #4da6ff; }
+
+.range-electric::-webkit-slider-thumb { background: #f7d51d; }
+.range-electric::-moz-range-thumb { background: #f7d51d; }
+
+.range-grass::-webkit-slider-thumb { background: #4dff88; }
+.range-grass::-moz-range-thumb { background: #4dff88; }
+
+.range-ghost::-webkit-slider-thumb { background: #a066ff; }
+.range-ghost::-moz-range-thumb { background: #a066ff; }
+
+/* Fill Track */
+.range-slider::-webkit-slider-runnable-track {
+  height: 100%;
+  background: #ccc;
+}
+
+.range-slider::-moz-range-track {
+  height: 100%;
+  background: #ccc;
+}
+
+/* ==============================
+   TOGGLE BASE
+   ============================== */
+.pb-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  margin: 10px;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.pb-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider */
+.pb-toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: none;
+  border: 3px solid black;
+  box-shadow: 4px 4px 0 black;
+  border-radius: 0;
+  transition: 0.2s;
+}
+
+/* Circle inside toggle */
+.pb-toggle .slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: currentColor;
+  border: 3px solid black;
+  box-shadow: 2px 2px 0 black;
+  transition: 0.2s;
+}
+
+/* Checked state */
+.pb-toggle input:checked + .slider::before {
+  transform: translateX(32px);
+}
+
+/* ==============================
+   VARIANTES DE COLOR
+   ============================== */
+.pb-toggle-fire { color: #ff4d4d; }
+.pb-toggle-water { color: #4da6ff; }
+.pb-toggle-electric { color: #f7d51d; }
+.pb-toggle-grass { color: #4dff88; }
+.pb-toggle-ghost { color: #a066ff; }
+
+/* ================================
+   FILE UPLOAD - PIXELBIT LIBRARY
+   ================================ */
+
+.file-upload {
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  border: 4px solid black;
+  border-radius: 0;
+  box-shadow: 4px 4px 0 black;
+  font-family: 'Press Start 2P', monospace;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  line-height: 40px;
+  color: black;
+  margin: 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.file-upload:hover {
+  filter: brightness(1.1);
+}
+
+.file-upload:active {
+  transform: translate(2px,2px);
+  box-shadow: 2px 2px 0 black;
+}
+
+/* Hide the real input */
+.file-upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* ================================
+   VARIANTES DE COLOR
+   ================================ */
+
+.file-fire { background: #ff4d4d; color: black; }
+.file-water { background: #4da6ff; color: black; }
+.file-electric { background: #f7d51d; color: black; }
+.file-grass { background: #4dff88; color: black; }
+.file-ghost { background: #a066ff; color: black; }
+
+/* ==============================
+   CLASE BASE DE INPUT PARA VALIDACION
+   ============================== */
+.validation-input {
+  font-family: 'Press Start 2P', monospace;
+  padding: 12px 20px;
+  border: 3px solid black;
+  background: none;
+  outline: none;
+  box-shadow: 4px 4px 0 black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.1s;
+}
+
+/* ==============================
+   EFECTOS HOVER Y ACTIVE
+   ============================== */
+.validation-input:hover {
+  filter: brightness(1.1);
+}
+
+.validation-input:focus {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 black;
+}
+
+/* ==============================
+   ESTADOS DE VALIDACION
+   ============================== */
+
+/* Success */
+.validation-success {
+  border-color: #4da6ff; /* water */
+  box-shadow: 4px 4px 0 black, inset 0 0 0 2px #4da6ff;
+}
+
+/* Error */
+.validation-error {
+  border-color: #ff4d4d; /* fire */
+  box-shadow: 4px 4px 0 black, inset 0 0 0 2px #ff4d4d;
+}
+
+/* Warning */
+.validation-warning {
+  border-color: #f7d51d; /* electric */
+  box-shadow: 4px 4px 0 black, inset 0 0 0 2px #f7d51d;
+}
+
+/* Importar todos los componentes */
+
+/* Resto de tu CSS base si tienes */

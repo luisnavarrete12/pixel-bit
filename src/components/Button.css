@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+/* ================================
+   Button BASE
+   ================================ */
+
+.btn {
+
+  font-family: 'Press Start 2P', monospace;
+
+  
+  padding: 12px 20px;
+
+ 
+  border: 3px solid black;
+
+
+  background: none;
+
+  
+  cursor: pointer;
+
+  
+  text-transform: uppercase;
+
+  
+  letter-spacing: 1px;
+
+
+  box-shadow: 4px 4px 0 black;
+
+  
+  transition: 0.1s;
+
+  
+  outline: none;
+}
+
+
+/* ================================
+   Hover effect
+   ================================ */
+
+.btn:hover {
+  
+  filter: brightness(1.1);
+}
+
+
+/* ================================
+   Active 
+   ================================ */
+
+.btn:active {
+  
+  transform: translate(2px, 2px);
+
+  
+  box-shadow: 2px 2px 0 black;
+}
+
+
+/* ================================
+   Disabled state
+   ================================ */
+
+.btn:disabled {
+  
+  background: #bfbfbf;
+
+  color: #666;
+
+  cursor: not-allowed;
+
+  /* small shadow */
+  box-shadow: 2px 2px 0 black;
+
+  /* low opacity */
+  opacity: 0.7;
+}
+
+
+/* ================================
+    Color variants
+   ================================ */
+
+/* Tipo eléctrico (amarillo) */
+.btn-pokemon-electric {
+  background: #f7d51d;
+  color: black;
+}
+
+/* Tipo fuego (rojo) */
+.btn-pokemon-fire {
+  background: #ff4d4d;
+  color: black;
+}
+
+/* Tipo agua (azul) */
+.btn-pokemon-water {
+  background: #4da6ff;
+  color: black;
+}
+
+/* Tipo planta (verde) */
+.btn-pokemon-grass {
+  background: #4dff88;
+  color: black;
+}
+
+/* Tipo fantasma (morado) */
+.btn-pokemon-ghost {
+  background: #a066ff;
+  color: black;
+}
+
+
+/* ================================
+   TAMAÑOS
+   ================================ */
+
+/* Pequeño */
+.btn-sm {
+  padding: 8px 14px;
+  font-size: 10px;
+}
+
+/* Mediano (default) */
+.btn-md {
+  padding: 12px 20px;
+  font-size: 12px;
+}
+
+/* Grande */
+.btn-lg {
+  padding: 16px 26px;
+  font-size: 14px;
+}

@@ -1,0 +1,105 @@
+/* ================================
+   BASE PROGRESS BAR
+   ================================ */
+
+.pb-bar {
+  width: 260px;
+  height: 22px;
+  background: #e0e0e0;
+  border: 3px solid black;
+  box-shadow: 4px 4px 0 black;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fill */
+.pb-bar-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+/* ================================
+   Color variants
+   ================================ */
+
+/* Fire */
+.pb-fire .pb-bar-fill {
+  background: #ff4d4d;
+}
+
+/* Water */
+.pb-water .pb-bar-fill {
+  background: #4da6ff;
+}
+
+/* Electric */
+.pb-electric .pb-bar-fill {
+  background: #f7d51d;
+}
+
+/* Grass */
+.pb-grass .pb-bar-fill {
+  background: #4dff88;
+}
+
+/* Ghost */
+.pb-ghost .pb-bar-fill {
+  background: #a066ff;
+}
+
+/* ================================
+    bar types
+   ================================ */
+
+/* HP Bar */
+.hp-bar .pb-bar-fill {
+  background: linear-gradient(
+    90deg,
+    #ff4d4d,
+    #ff7a7a
+  );
+}
+
+/* MP Bar */
+.mp-bar .pb-bar-fill {
+  background: linear-gradient(
+    90deg,
+    #4da6ff,
+    #7fc1ff
+  );
+}
+
+/* XP Bar */
+.xp-bar .pb-bar-fill {
+  background: linear-gradient(
+    90deg,
+    #4dff88,
+    #9bffb8
+  );
+}
+
+/* Loading Bar */
+.loading-bar .pb-bar-fill {
+  background: repeating-linear-gradient(
+    45deg,
+    #f7d51d,
+    #f7d51d 8px,
+    #ffeb7a 8px,
+    #ffeb7a 16px
+  );
+  animation: loading-move 1s linear infinite;
+}
+
+/* ================================
+   LOADING ANIMATION
+   ================================ */
+
+@keyframes loading-move {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 32px 0;
+  }
+}

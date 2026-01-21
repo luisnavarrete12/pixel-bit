@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ==============================
+   SELECT BASE
+   ============================== */
+.pb-select {
+  font-family: 'Press Start 2P', monospace;
+  padding: 12px 16px;
+  border: 3px solid black;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 4px 4px 0 black;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: 0.1s;
+}
+
+/* HOVER & ACTIVE */
+.pb-select:hover {
+  filter: brightness(1.1);
+}
+.pb-select:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 black;
+}
+
+/* ==============================
+    color variants
+   ============================== */
+.pb-select-fire { background: #ff4d4d; color: black; }
+.pb-select-water { background: #4da6ff; color: black; }
+.pb-select-electric { background: #f7d51d; color: black; }
+.pb-select-grass { background: #4dff88; color: black; }
+.pb-select-ghost { background: #a066ff; color: black; }
+
+/* ==============================
+    SIZE VARIANTS
+   ============================== */
+.pb-select-sm { padding: 8px 12px; font-size: 10px; }
+.pb-select-md { padding: 12px 16px; font-size: 12px; }
+.pb-select-lg { padding: 16px 20px; font-size: 14px; }

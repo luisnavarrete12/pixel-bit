@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ==============================
+    VALIDATION INPUT BASE
+   ============================== */
+.validation-input {
+  font-family: 'Press Start 2P', monospace;
+  padding: 12px 20px;
+  border: 3px solid black;
+  background: none;
+  outline: none;
+  box-shadow: 4px 4px 0 black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.1s;
+}
+
+/* ==============================
+    INTERACTIONS
+   ============================== */
+.validation-input:hover {
+  filter: brightness(1.1);
+}
+
+.validation-input:focus {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 black;
+}
+
+/* ==============================
+    VALIDATION STATES
+   ============================== */
+
+/* Success */
+.validation-success {
+  border-color: #4da6ff; /* water */
+  box-shadow: 4px 4px 0 black, inset 0 0 0 2px #4da6ff;
+}
+
+/* Error */
+.validation-error {
+  border-color: #ff4d4d; /* fire */
+  box-shadow: 4px 4px 0 black, inset 0 0 0 2px #ff4d4d;
+}
+
+/* Warning */
+.validation-warning {
+  border-color: #f7d51d; /* electric */
+  box-shadow: 4px 4px 0 black, inset 0 0 0 2px #f7d51d;
+}
