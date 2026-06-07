@@ -273,4 +273,3 @@ Give a ⭐️ if this project helped you!
 
 ---
 
-**Made with ❤️ for retro gaming lovers**
